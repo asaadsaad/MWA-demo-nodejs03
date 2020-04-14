@@ -1,6 +1,6 @@
 //SET UV_THREADPOOL_SIZE=2 && node threads.js
 //SET UV_THREADPOOL_SIZE=5 && node threads.js
-
+// export UV_THREADPOOL_SIZE=2 && node threads.js
 const crypto = require('crypto');
 
 const start_time = Date.now();
