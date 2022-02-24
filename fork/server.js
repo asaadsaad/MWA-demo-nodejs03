@@ -5,6 +5,7 @@ const server = http.createServer();
 
 
 server.on('request', (req, res) => {
+  console.log(`Request received: ${req.url}`)
   //  const sum = longComputation();
   //  return res.end(`Sum is ${sum}`);
   const compute = fork('compute.js');
