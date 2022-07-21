@@ -9,5 +9,5 @@ const longComputation = () => {
 process.on('message', (msg) => {
   const sum = longComputation();
   process.send(sum);
-  process.exit(1)
+  process.exit(0)
 });
